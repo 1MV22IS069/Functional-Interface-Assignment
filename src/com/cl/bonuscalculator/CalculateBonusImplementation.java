@@ -1,10 +1,10 @@
 package com.cl.bonuscalculator;
 import java.util.Scanner;
 
-public class CalculateBonus {
+public class CalculateBonusImplementation {
     BonusCalculator calculate = (sal) -> 0.15 * sal;
 
-    void calculateBonus() {
+    public void calculateBonus() {
 
         Scanner sc = new Scanner(System.in);
 
@@ -19,8 +19,4 @@ public class CalculateBonus {
         sc.close();
     }
 
-    public static void main(String[] args) {
-        CalculateBonus calcBonus = new CalculateBonus();
-        calcBonus.calculateBonus();
-    }
 }

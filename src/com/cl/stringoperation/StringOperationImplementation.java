@@ -1,7 +1,7 @@
 package com.cl.stringoperation;
 import java.util.Arrays;
 
-public class StringOperationExample {
+public class StringOperationImplementation {
     StringOperation upperCase = s -> s.toUpperCase();
     StringOperation lowerCase = s -> s.toLowerCase();
     IntegerOperation length = s -> s.length();

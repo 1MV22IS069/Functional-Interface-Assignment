@@ -1,7 +1,7 @@
 package com.cl.calculator;
 import java.util.Scanner;
 
-public class CalculatorClass{
+public class CalculatorClassImplementation{
     Calculator addition = (a,b) -> a+b;
     Calculator subtraction = (a,b) -> a-b;
     Calculator multiplication = (a,b) -> a*b;
@@ -17,7 +17,7 @@ public class CalculatorClass{
             return -1;
         }
     };
-    void calculate() {
+    public void calculate() {
 
         Scanner sc = new Scanner(System.in);
 
@@ -35,8 +35,4 @@ public class CalculatorClass{
         sc.close();
     }
 
-    public static void main(String[] args) {
-        CalculatorClass cal = new CalculatorClass();
-        cal.calculate();
-    }
 }

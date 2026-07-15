@@ -1,13 +1,13 @@
 package com.cl.areacalculator;
 import java.util.Scanner;
 
-public class Area {
+public class AreaImplementation {
     double PI = 3.14;
     AreaTriangle areaT = (b,h) -> (0.5*b*h);
     AreaCircle areaC = (r) -> (PI*r*r);
     AreaRectangle areaR = (l,b) -> (l*b);
 
-    void calculateArea() {
+    public void calculateArea() {
 
         Scanner sc = new Scanner(System.in);
 
@@ -54,8 +54,4 @@ public class Area {
         sc.close();
     }
 
-    public static void main(String[] args) {
-        Area ar = new Area();
-        ar.calculateArea();
-    }
 }

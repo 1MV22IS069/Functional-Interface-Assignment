@@ -3,11 +3,11 @@ import java.util.Scanner;
 
 public class PerformOperation {
 
-    void performOperations() {
+    public void performOperations() {
 
         Scanner sc = new Scanner(System.in);
 
-        StringOperationExample soe = new StringOperationExample();
+        StringOperationImplementation soe = new StringOperationImplementation();
 
         System.out.print("Enter string: ");
         String str = sc.nextLine();
@@ -79,10 +79,5 @@ public class PerformOperation {
 
         sc.close();
     }
-    public static void main(String[] args) {
 
-        PerformOperation po = new PerformOperation();
-        po.performOperations();
-
-    }
 }
