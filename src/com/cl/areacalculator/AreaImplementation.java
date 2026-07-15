@@ -16,11 +16,11 @@ public class AreaImplementation {
         System.out.println("3. Rectangle");
 
         System.out.print("Select operation: ");
-        int choice = sc.nextInt();
+        String choice = sc.nextLine();
 
         switch (choice) {
 
-            case 1:
+            case "Triangle":
                 System.out.print("Enter base: ");
                 double base = sc.nextDouble();
 
@@ -30,14 +30,14 @@ public class AreaImplementation {
                 System.out.println("Triangle Area: " + areaT.areaCalculate(base, height));
                 break;
 
-            case 2:
+            case "Circle":
                 System.out.print("Enter radius: ");
                 double radius = sc.nextDouble();
 
                 System.out.println("Circle Area: " + areaC.areaCalculate(radius));
                 break;
 
-            case 3:
+            case "Rectangle":
                 System.out.print("Enter length: ");
                 double length = sc.nextDouble();
 
